@@ -5,6 +5,10 @@ import Home                 from 'components/Home.js';
 import About                from 'components/About.js';
 import Contact              from 'components/Contact.js';
 import Header               from 'components/Header.js';
+import '../assets/css/basic.css';
+import '../assets/css/animate.css';
+import '../assets/css/theme-colors/orange.css';
+import '../assets/css/layout.css';
 
 import {
     BrowserRouter as Router,
@@ -29,9 +33,9 @@ class AppInitializer {
                     component={this.templates[page.slug]}
                     path={`/${page.slug}`}
                     exact
-                /> 
+                />
             )
-        })     
+        })
     }
 
     run() {
@@ -46,7 +50,7 @@ class AppInitializer {
 
                             {this.buildRoutes(response)}
                             <Route render={() => { return <Redirect to="/" /> }} />
-                        </Switch> 
+                        </Switch>
                     </div>
                 </Router>
 

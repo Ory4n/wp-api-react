@@ -9,7 +9,7 @@ class Home extends React.Component {
                 <h2>Homepage template</h2>
                 <h1>{pageData.title.rendered}</h1>
 
-                <div dangerouslySetInnerHTML={{__html: pageData.excerpt.rendered}} />
+                <div dangerouslySetInnerHTML={{__html: pageData.content.rendered}} />
                 <div>{pageData.acf.text}</div>
             </div>
         );
