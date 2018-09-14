@@ -1,6 +1,6 @@
 # Wordpress REST API + React JS
 
-This boilerplate will help you use React JS with Wordpress REST API.
+Level 7 web development project.
 Clone the project and install node packages:
 
 ```
